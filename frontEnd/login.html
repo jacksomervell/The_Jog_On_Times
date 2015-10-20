@@ -1,7 +1,7 @@
-<div class="login-container" ng-controller="localStorageController as local">
-	<form ng-submit="local.saveName()" class="login-form">
+<div class="login-container" ng-controller="LocalStorageController as local">
+
 		<label for="login-input">Enter your name: </label>
 		<input type="text" name="login-input" ng-model="local.name">
-		<input type="submit">
-	</form>
+		<input type="submit" ng-click="local.saveName(e)" ui-sref="setup">
+
 </div>
