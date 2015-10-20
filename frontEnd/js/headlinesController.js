@@ -62,5 +62,11 @@ angular
     this.getScores = function() {
     	this.allScores = JSON.parse(localStorage.getItem('jogOnApp'));
     }
+
+    this.resetValues = function() {
+			this.year = '';
+			this.category = '';
+		}
+
  	}
 

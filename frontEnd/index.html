@@ -42,7 +42,7 @@
 			<div id="scoreboard" class="col s3">
 				<h4 class="current-scores" ng-init ="headlines.getScores()">Scoreboard</h4>
 				<ol>
-					<li ng-repeat="score in headlines.allScores | filter: { score: '!undefined' } | orderBy: '-score' ">{{ score.name }}: {{ score.score }}</li>
+					<li ng-repeat="score in headlines.allScores | filter: { score: '!undefined' } | orderBy: '-score' | limitTo: 10 ">{{ score.name }}: {{ score.score }}</li>
 				</ol>
 			</div>
 		</div>
