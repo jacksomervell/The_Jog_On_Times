@@ -8,14 +8,20 @@
 	src: url('./font/cheltenham.ttf');
 }
 
+body {
+	background-color: #5E626E;
+}
+
 .container {
 	width: 95%;
+	background-color: #EDEFF0;
 }
 
 #navbar {
 	width: 100%;
 	height: 20%;
 	background-color: rgba(0, 0, 0, 0);
+	margin-top: 5px;
 }
 
 #title-container {
@@ -60,15 +66,17 @@
 	margin-top: 5px; 
 }
 
-
-
 .instructions-text,.login-container {
-	font-family: cheltenham;
+	font-family: arial;
 	font-size: 18px;
 }
 
 .show-answer-right {
 	color: green;
+}
+
+.year-display, .category-display {
+	margin-left: 10px;
 }
 
 .show-answer-wrong {
@@ -83,6 +91,74 @@ li {
 	font-family: cheltenham;
 	font-size: 28px;
 }
+
+.quiz-score {
+	font-family: cheltenham;
+	font-size: 42px;
+}
+
+.try-again {
+	font-family: arial;
+	font-size: 28px;
+}
+
+.score-page {
+	margin-top: 70px;
+	text-align: center;
+}
+
+input[type='text'].ng-pristine {
+	width: 60%;
+}
+
+select.ng-pristine {
+	width: 60%;
+}
+input[type='text'].ng-pristine {
+	width: 60%;
+}
+
+.login-label {
+	margin-left: 5px;
+	font-family: cheltenham;
+	font-size: 28px;
+	color: black;
+	height: 30px;
+
+}
+
+.top-scores {
+	font-family: arial;
+	font-size: 18px;
+	margin-left: -10px;
+}
+
+ol {
+	margin-left: -10px;
+}
+
+::-webkit-input-placeholder {
+   color: #A9A9A9;
+   font-size: 18px;
+   margin-bottom: 5px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #A9A9A9;
+   font-size: 18px;
+   margin-bottom: 5px;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #A9A9A9;
+   font-size: 18px;
+   margin-bottom: 5px;  
+}
+
+:-ms-input-placeholder {  
+   color: #A9A9A9;
+   font-size: 18px;
+   margin-bottom: 5px;  
 
 /*button {
 	padding-top: 2px;

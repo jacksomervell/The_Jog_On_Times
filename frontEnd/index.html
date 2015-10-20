@@ -19,9 +19,9 @@
 
 	<main ng-controller="HeadlineController as headlines">
 
-	<div ng-include="'navbar.html'"></div>
 
 	<div class="container">
+	<div ng-include="'navbar.html'"></div>
 		<div class="row">
 			<div id="left-sidebar" class="col s3">
 				<div id="year">
@@ -35,7 +35,7 @@
 			<div id="scoreboard" class="col s3">
 				<h4 class="current-scores" ng-init ="headlines.getScores()">Scoreboard</h4>
 				<ol>
-					<li ng-repeat="score in headlines.allScores | filter: { score: '!undefined' } | orderBy: '-score' | limitTo: 10 ">{{ score.name }}: {{ score.score }}</li>
+					<li class="top-scores" ng-repeat="score in headlines.allScores | filter: { score: '!undefined' } | orderBy: '-score' | limitTo: 10 ">{{ score.name }}: {{ score.score }}</li>
 				</ol>
 			</div>
 		</div>
