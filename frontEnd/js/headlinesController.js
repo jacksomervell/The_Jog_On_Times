@@ -39,7 +39,7 @@ angular
     	console.log('hello!');
       if (self.answer === self.getHeadlines[currentQuestion].blankWord) {
         score = score + 1;
-        console.log(self.getHeadlines[0].blankWord);
+        console.log(self.getHeadlines[currentQuestion].blankWord);
         console.log('Correct so score is now ' + score);
       }
       else {
