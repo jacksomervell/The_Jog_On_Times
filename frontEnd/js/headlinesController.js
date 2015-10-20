@@ -24,10 +24,7 @@ angular
       .then(function(response){
         self.getHeadlines = response.data;
         console.log(response.data)
-
     	});
-
-
   	}
   	this.saveSetup = function() {
 
@@ -37,12 +34,9 @@ angular
 			self.jogOnApp[index].category = self.category
 			console.log(self.jogOnApp[index])
 			console.log('clicked');
-
-
-
 		}
-	}
     this.updateScore = function() {
+    	console.log('hello!');
       if (self.answer === self.getHeadlines[currentQuestion].blankWord) {
         score = score + 1;
         console.log(self.getHeadlines[0].blankWord);
@@ -57,6 +51,5 @@ angular
       currentQuestion = currentQuestion + 1;
       self.answer = '';
     }
-
-  }
+	}
 
