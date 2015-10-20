@@ -13,7 +13,7 @@ angular
 
     self.answer = ''
 
-    var score = 0;
+    self.score = 0;
     var currentQuestion = 0;
 		self.getHeadlines = []
 
@@ -33,28 +33,43 @@ angular
 			self.jogOnApp[index].year = self.year
 			self.jogOnApp[index].category = self.category
 			console.log(self.jogOnApp[index])
-			console.log('clicked');
+			localStorage.setItem('jogOnApp', JSON.stringify(self.jogOnApp))			
+
 		}
     this.updateScore = function() {
     	console.log('hello!');
       if (self.answer === self.getHeadlines[currentQuestion].blankWord) {
-        score = score + 1;
-        console.log(self.getHeadlines[currentQuestion].blankWord);
-        console.log('Correct so score is now ' + score);
+        self.score = self.score + 1;
+        console.log(self.getHeadlines[0].blankWord);
+        console.log('Correct so score is now ' + self.score);
       }
       else {
         console.log(self.getHeadlines[currentQuestion].blankWord);
-        console.log('Wrong so score is still ' + score);
-
+        console.log('Wrong so score is still ' + self.score);
       }
 
       currentQuestion = currentQuestion + 1;
     
+			self.jogOnApp = JSON.parse(localStorage.getItem('jogOnApp'));
+			var index = self.jogOnApp.length -1
+			self.jogOnApp[index].score = self.score
+			console.log(self.jogOnApp[index])
+			localStorage.setItem('jogOnApp', JSON.stringify(self.jogOnApp))	
+
     }
+
+    this.getScores = function() {
+    	this.allScores = JSON.parse(localStorage.getItem('jogOnApp'));
+    }
+
+    this.resetValues = function() {
+			this.year = '';
+			this.category = '';
+		}
 
     this.clearAnswer = function(){
       self.answer = ''
-   }
+    }
 
-	}
+ 	}
 

@@ -53,6 +53,14 @@
 	font-size: 28px;
 }
 
+#quiz-box {
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+	height: 600px;
+	margin-top: 5px; 
+}
+
+
 
 .instructions-text,.login-container {
 	font-family: cheltenham;
