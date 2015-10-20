@@ -77,6 +77,7 @@ li {
 	font-size: 28px;
 }
 
+
 .page-header  {
 	font-size: 20px;
 	float: right;
@@ -86,3 +87,19 @@ li {
 	font-size: 50px;
 	border-bottom: 1px solid gray;
 }
+
+#headlineDate{
+	font-size: 15px;
+	font-style: italic;
+	float: right;
+}
+
+#loadBar {
+	text-align: center;
+	margin-top: 240px;
+}
+
+/*button {
+	padding-top: 2px;
+}*/
+
