@@ -53,9 +53,18 @@
 	font-size: 28px;
 }
 
+
 .instructions-text,.login-container {
 	font-family: cheltenham;
 	font-size: 18px;
+}
+
+.show-answer-right {
+	color: green;
+}
+
+.show-answer-wrong {
+	color: red;
 }
 
 li {
