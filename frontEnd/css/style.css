@@ -1,19 +1,15 @@
 @font-face {
 	font-family: ancient;
-	src: url('css/font/ancient.ttf');
+	src: url('./font/ancient.ttf');
 }
 
 @font-face {
 	font-family: cheltenham;
-	src: url('css/font/cheltenham.ttf');
+	src: url('./font/cheltenham.ttf');
 }
 
 .container {
 	width: 95%;
-}
-
-div {
-	border: 2px solid red;
 }
 
 #navbar {
