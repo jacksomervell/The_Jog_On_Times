@@ -24,39 +24,97 @@
         {{headlines.getHeadlines[1].headline[0]}}
         <input ng-model = "headlines.answer" id ="headline-answer" type="text" autofocus>
         {{headlines.getHeadlines[1].headline[1]}}
-        <button class='submit' ng-click="Q3 = true; Q2 = false; headlines.updateScore()" >submit</button>
+        <button class='submit' ng-click="A2 = true; Q2 = false; headlines.updateScore()" >submit</button>
   </div> 
+
+  <div class="question-text" ng-show = "A2" class = "ng-hide"> 
+    <h3>Answer: </h3>
+    {{headlines.getHeadlines[1].headline[0]}}
+    
+    <span ng-class="{true: 'show-answer-right', false: 'show-answer-wrong'}[headlines.answer == headlines.getHeadlines[1].blankWord ]">
+    {{headlines.getHeadlines[1].blankWord}}</span>
+
+    {{headlines.getHeadlines[1].headline[1]}}
+    <button class='submit' ng-click="Q3 = true; A2 = false; headlines.clearAnswer()" >Next question</button>
+  </div>
 
    <div class = "question-text" ng-show= "Q3" class="ng-hide">
         <h2>3</h2>
         {{headlines.getHeadlines[2].headline[0]}}
         <input ng-model = "headlines.answer" id ="headline-answer" type="text" autofocus>
         {{headlines.getHeadlines[2].headline[1]}}
-        <button class='submit' ng-click="Q4 = true; Q3 = false; headlines.updateScore()" >submit</button>
+        <button class='submit' ng-click="A3 = true; Q3 = false; headlines.updateScore()" >submit</button>
   </div>
+
+    <div class="question-text" ng-show = "A3" class = "ng-hide"> 
+    <h3>Answer: </h3>
+    {{headlines.getHeadlines[2].headline[0]}}
+    
+    <span ng-class="{true: 'show-answer-right', false: 'show-answer-wrong'}[headlines.answer == headlines.getHeadlines[2].blankWord ]">
+    {{headlines.getHeadlines[2].blankWord}}</span>
+
+    {{headlines.getHeadlines[2].headline[1]}}
+    <button class='submit' ng-click="Q4 = true; A3 = false; headlines.clearAnswer()" >Next question</button>
+  </div>
+
 
    <div class = "question-text" ng-show= "Q4" class="ng-hide">
         <h2>4</h2>
         {{headlines.getHeadlines[3].headline[0]}}
         <input ng-model = "headlines.answer" id ="headline-answer" type="text" autofocus>
         {{headlines.getHeadlines[3].headline[1]}}
-        <button class='submit' ng-click="Q5 = true; Q4 = false; headlines.updateScore()" >submit</button>
+        <button class='submit' ng-click="A4 = true; Q4 = false; headlines.updateScore()" >submit</button>
   </div>
+
+    <div class="question-text" ng-show = "A4" class = "ng-hide"> 
+    <h3>Answer: </h3>
+    {{headlines.getHeadlines[3].headline[0]}}
+    
+    <span ng-class="{true: 'show-answer-right', false: 'show-answer-wrong'}[headlines.answer == headlines.getHeadlines[3].blankWord ]">
+    {{headlines.getHeadlines[3].blankWord}}</span>
+
+    {{headlines.getHeadlines[3].headline[1]}}
+    <button class='submit' ng-click="Q5 = true; A4 = false; headlines.clearAnswer()" >Next question</button>
+  </div>
+
 
   <div class = "question-text" ng-show= "Q5" class="ng-hide">
         <h2>5</h2>
         {{headlines.getHeadlines[4].headline[0]}}
         <input ng-model = "headlines.answer" id ="headline-answer" type="text" autofocus>
         {{headlines.getHeadlines[4].headline[1]}}
-        <button class='submit' ng-click="Q6 = true; Q5 = false; headlines.updateScore()" >submit</button>
+        <button class='submit' ng-click="A5 = true; Q5 = false; headlines.updateScore()" >submit</button>
   </div>
+
+  <div class="question-text" ng-show = "A5" class = "ng-hide"> 
+    <h3>Answer: </h3>
+    {{headlines.getHeadlines[4].headline[0]}}
+    
+    <span ng-class="{true: 'show-answer-right', false: 'show-answer-wrong'}[headlines.answer == headlines.getHeadlines[4].blankWord ]">
+    {{headlines.getHeadlines[4].blankWord}}</span>
+
+    {{headlines.getHeadlines[4].headline[1]}}
+    <button class='submit' ng-click="Q6 = true; A5 = false; headlines.clearAnswer()" >Next question</button>
+  </div>
+
 
   <div class = "question-text" ng-show= "Q6" class="ng-hide">
         <h2>6</h2>
         {{headlines.getHeadlines[5].headline[0]}}
         <input ng-model = "headlines.answer" id ="headline-answer" type="text" autofocus>
         {{headlines.getHeadlines[5].headline[1]}}
-        <button class='submit' ng-click="Q7 = true; Q6 = false; headlines.updateScore()" >submit</button>
+        <button class='submit' ng-click="A6 = true; Q6 = false; headlines.updateScore()" >submit</button>
+  </div>
+
+  <div class="question-text" ng-show = "A6" class = "ng-hide"> 
+    <h3>Answer: </h3>
+    {{headlines.getHeadlines[5].headline[0]}}
+    
+    <span ng-class="{true: 'show-answer-right', false: 'show-answer-wrong'}[headlines.answer == headlines.getHeadlines[5].blankWord ]">
+    {{headlines.getHeadlines[5].blankWord}}</span>
+
+    {{headlines.getHeadlines[5].headline[1]}}
+    <button class='submit' ng-click="Q7 = true; A6 = false; headlines.clearAnswer()" >Next question</button>
   </div>
 
   <div class = "question-text" ng-show= "Q7" class="ng-hide">
@@ -64,15 +122,38 @@
         {{headlines.getHeadlines[6].headline[0]}}
         <input ng-model = "headlines.answer" id ="headline-answer" type="text" autofocus>
         {{headlines.getHeadlines[6].headline[1]}}
-        <button class='submit' ng-click="Q8 = true; Q7 = false; headlines.updateScore()">submit</button>
+        <button class='submit' ng-click="A7 = true; Q7 = false; headlines.updateScore()">submit</button>
   </div>
+
+  <div class="question-text" ng-show = "A7" class = "ng-hide"> 
+    <h3>Answer: </h3>
+    {{headlines.getHeadlines[6].headline[0]}}
+    
+    <span ng-class="{true: 'show-answer-right', false: 'show-answer-wrong'}[headlines.answer == headlines.getHeadlines[6].blankWord ]">
+    {{headlines.getHeadlines[6].blankWord}}</span>
+
+    {{headlines.getHeadlines[6].headline[1]}}
+    <button class='submit' ng-click="Q8 = true; A7 = false; headlines.clearAnswer()" >Next question</button>
+  </div>
+
 
   <div class = "question-text" ng-show= "Q8" class="ng-hide">
         <h2>8</h2> 
         {{headlines.getHeadlines[7].headline[0]}}
         <input ng-model = "headlines.answer" id ="headline-answer" type="text" autofocus>
         {{headlines.getHeadlines[7].headline[1]}}
-        <button class='submit' ng-click="Q9 = true; Q8 = false; headlines.updateScore()">submit</button>
+        <button class='submit' ng-click="A8 = true; Q8 = false; headlines.updateScore()">submit</button>
+  </div>
+
+  <div class="question-text" ng-show = "A8" class = "ng-hide"> 
+    <h3>Answer: </h3>
+    {{headlines.getHeadlines[7].headline[0]}}
+    
+    <span ng-class="{true: 'show-answer-right', false: 'show-answer-wrong'}[headlines.answer == headlines.getHeadlines[7].blankWord ]">
+    {{headlines.getHeadlines[7].blankWord}}</span>
+
+    {{headlines.getHeadlines[7].headline[1]}}
+    <button class='submit' ng-click="Q9 = true; A8 = false; headlines.clearAnswer()" >Next question</button>
   </div>
 
   <div class = "question-text" ng-show= "Q9" class="ng-hide">
@@ -80,7 +161,18 @@
         {{headlines.getHeadlines[8].headline[0]}}
         <input ng-model = "headlines.answer" id ="headline-answer" type="text" autofocus>
         {{headlines.getHeadlines[8].headline[1]}}
-        <button class='submit' ng-click="Q10 = true; Q9 = false; headlines.updateScore()">submit</button>
+        <button class='submit' ng-click="A9 = true; Q9 = false; headlines.updateScore()">submit</button>
+  </div>
+
+  <div class="question-text" ng-show = "A9" class = "ng-hide"> 
+    <h3>Answer: </h3>
+    {{headlines.getHeadlines[8].headline[0]}}
+    
+    <span ng-class="{true: 'show-answer-right', false: 'show-answer-wrong'}[headlines.answer == headlines.getHeadlines[8].blankWord ]">
+    {{headlines.getHeadlines[8].blankWord}}</span>
+
+    {{headlines.getHeadlines[8].headline[1]}}
+    <button class='submit' ng-click="A9 = false; headlines.clearAnswer()" >Final Scores</button>
   </div>
 
 </li>
