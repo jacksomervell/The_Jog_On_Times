@@ -12,6 +12,16 @@ angular
         "headline": ["Cat Found", "Up Tree"],
         "blankWord": "Stuck",
         "blankWordCharLength": 5
+    },
+    {
+        "headline": ["Jack Found", "Up Tree"],
+        "blankWord": "Hiding",
+        "blankWordCharLength": 6
+    },
+    {
+        "headline": ["Josh Found", "Up Tree"],
+        "blankWord": "Laughing",
+        "blankWordCharLength": 8
     }];
 
 		// getHeadlines();
