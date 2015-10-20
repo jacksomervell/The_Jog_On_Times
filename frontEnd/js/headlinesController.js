@@ -6,6 +6,9 @@ angular
 
 	function HeadlineController($http) {
 		var self = this;
+    self.year = ''
+    self.category =''
+
 		// self.all = [];
 		self.getHeadlines = []
 		// self.getHeadlines =     [{
@@ -36,11 +39,13 @@ angular
 
 		// getHeadlines();
 
-		function getData() {
+		this.getData = function() {
+
 		 $http
       .get('http://localhost:3000/news/' + self.year + '/' + self.category)
       .then(function(response){
-        self.getHeadlines = response;
+        self.getHeadlines = response.data;
+        console.log(response.data)
     	});
   	}
 	}
