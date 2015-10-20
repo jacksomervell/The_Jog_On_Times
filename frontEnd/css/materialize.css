@@ -5035,15 +5035,15 @@ nav ul a span.badge {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 95%; }
+  width: 90%; }
 
 @media only screen and (min-width : 601px) {
   .container {
-    width: 95%; } }
+    width: 90%; } }
 
 @media only screen and (min-width : 993px) {
   .container {
-    width: 95%; } }
+    width: 90%; } }
 
 .container .row {
   margin-left: -0.75rem;
@@ -5434,7 +5434,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1 {
   font-size: 4.2rem;
   line-height: 110%;
-  margin: 2.1rem 0 1.68rem 0; }
+ }
 
 h2 {
   font-size: 3.56rem;
@@ -6334,7 +6334,6 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
     transform: translateY(-140%); }
   .input-field .prefix {
     position: absolute;
-    width: 3rem;
     font-size: 2rem;
     -webkit-transition: color .2s;
     -moz-transition: color .2s;
@@ -6345,20 +6344,20 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
       color: #26a69a; }
   .input-field .prefix ~ input, .input-field .prefix ~ textarea {
     margin-left: 3rem;
-    width: 92%;
-    width: calc(100% - 3rem); }
+    width: 60%;
+   }
   .input-field .prefix ~ textarea {
     padding-top: .8rem; }
   .input-field .prefix ~ label {
     margin-left: 3rem; }
   @media only screen and (max-width : 992px) {
     .input-field .prefix ~ input {
-      width: 86%;
-      width: calc(100% - 3rem); } }
+      width: 60%;
+   } }
   @media only screen and (max-width : 600px) {
     .input-field .prefix ~ input {
-      width: 80%;
-      width: calc(100% - 3rem); } }
+      width: 60%;
+     } }
 
 .input-field input[type=search] {
   display: block;
@@ -6384,7 +6383,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
     transition: .3s color; }
 
 textarea {
-  width: 100%;
+  width: 60%;
   height: 3rem;
   background-color: transparent; }
   textarea.materialize-textarea {
@@ -6749,7 +6748,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
 /***************
   Select Field
 ***************/
-/*.select-label {
+.select-label {
   position: absolute; }
 
 .select-wrapper {
@@ -6782,7 +6781,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     font-size: 0.8rem; }
 
 select {
-  display: none; }
+  display: inline-block; }
 
 select.browser-default {
   display: block; }
@@ -6794,20 +6793,20 @@ select:disabled {
   color: rgba(0, 0, 0, 0.3);
   cursor: default;
   -webkit-user-select: none;
-  /* webkit (safari, chrome) browsers 
+   webkit (safari, chrome) browsers 
   -moz-user-select: none;
-  /* mozilla browsers */
+   mozilla browsers 
   -ms-user-select: none;
-  /* IE10+ */
-/*  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  IE10+ 
+border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
 
 .select-wrapper i {
   color: rgba(0, 0, 0, 0.3); }
 
 .select-dropdown li.disabled {
   color: rgba(0, 0, 0, 0.3);
-  background-color: transparent; }*/
-*/*/
+  background-color: transparent; }
+
 /*********************
       File Input
 **********************/
