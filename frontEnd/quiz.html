@@ -69,7 +69,7 @@
         {{headlines.getHeadlines[8].headline[0]}}
         <input ng-model = "headlines.answer" id ="headline-answer" type="text" autofocus>
         {{headlines.getHeadlines[8].headline[1]}}
-        <button class='submit' ng-click="Q10 = true; Q9 = false; headlines.updateScore()">submit</button>
+        <button class='submit' ng-click="headlines.updateScore()" ui-sref="score">submit</button>
   </div>
 
 </li>

@@ -21,4 +21,9 @@ angular
 			templateUrl: 'quiz.html'
 		})
 
+		.state('score', {
+			url: '/score',
+			templateUrl: 'score.html'
+		})
+
 	}

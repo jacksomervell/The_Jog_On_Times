@@ -40,10 +40,10 @@
 			</div>
 			<div id="quiz-box" class="col s6" ui-view></div>
 			<div id="scoreboard" class="col s3">
-				<h4 class="current-scores">Scoreboard</h4>
-				<ul>
-					<li>test scores</li>
-				</ul>
+				<h4 class="current-scores" ng-init ="headlines.getScores()">Scoreboard</h4>
+				<ol>
+					<li ng-repeat="score in headlines.allScores | filter: { score: '!undefined' } | orderBy: '-score' ">{{ score.name }}: {{ score.score }}</li>
+				</ol>
 			</div>
 		</div>
 	</div>
