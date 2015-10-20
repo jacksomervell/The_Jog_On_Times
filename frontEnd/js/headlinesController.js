@@ -40,7 +40,7 @@ angular
 		 $http
       .get('http://localhost:3000/news/' + self.year + '/' + self.category)
       .then(function(response){
-        self.all = response.data.headlines;
+        self.all = response
     	});
   	}
 	}
