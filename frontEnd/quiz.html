@@ -3,9 +3,9 @@
   <div class = "question-text" ng-init= "Q1 = true" ng-show= "Q1" class= "ng-hide">
         <h2>1</h2>
         {{headlines.getHeadlines[0].headline[0]}}
-        <input id ="headline-answer" type="text" autofocus>
+        <input ng-model = "headlines.answer" id ="headline-answer" type="text" autofocus>
         {{headlines.getHeadlines[0].headline[1]}}
-        <button class='submit' ng-click="Q2 = true; Q1 = false" >submit</button>
+        <button class='submit' ng-click="Q2 = true; Q1 = false; headlines.updateScore() " >submit</button>
   </div>
 
   <div class = "question-text" ng-show= "Q2" class="ng-hide"> 
