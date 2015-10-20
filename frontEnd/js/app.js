@@ -4,7 +4,6 @@ angular
 
 	function MainRouter($stateProvider, $urlRouterProvider) {
 		$urlRouterProvider.otherwise('/');
-	}
 
 	$stateProvider
 		.state('home', {
@@ -12,4 +11,5 @@ angular
 			templateUrl: 'home.html'
 		})
 
+	}
 		

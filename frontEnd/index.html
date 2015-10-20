@@ -10,9 +10,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-	<main ng-controller="headlineController as hl">
-		
+	<main ng-controller="HeadlineController as headlines">
+		<li ng-repeat="headline in headlines.getHeadlines">
+      <strong>{{ headline.headline[0] }}</strong>
+      <input type="text" placeholder="fuck yeah">
+      <strong>{{ headline.headline[1] }}</strong>
+    </li>
 	</main>
 	
 	
