@@ -4,7 +4,7 @@ function getNews(req, response){
 
   var start = req.params.year + '0101'
   var end = req.params.year + '1231'
-  var url = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + req.params.category + '&begin_date='+ start +'&end_date='+ end +'&api-key=9ede21e2158225e76cdbaf38fcaf8bda%3A14%3A73258088'
+  var url = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + req.params.category + '&begin_date='+ start +'&end_date='+ end +'&page=10&api-key=9ede21e2158225e76cdbaf38fcaf8bda%3A14%3A73258088'
 
   if(req.params.year && req.params.category) {
 
