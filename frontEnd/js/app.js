@@ -11,5 +11,9 @@ angular
 			templateUrl: 'home.html'
 		})
 
+		.state('quiz', {
+			url: '/quiz',
+			templateUrl: 'quiz.html'
+		})
+
 	}
-		
