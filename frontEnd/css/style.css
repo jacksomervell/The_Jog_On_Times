@@ -84,6 +84,17 @@ li {
 	font-size: 28px;
 }
 
+#headlineDate{
+	font-size: 15px;
+	font-style: italic;
+	float: right;
+}
+
+#loadBar {
+	text-align: center;
+	margin-top: 240px;
+}
+
 /*button {
 	padding-top: 2px;
 }*/

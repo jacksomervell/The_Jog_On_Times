@@ -18,13 +18,19 @@ function getNews(req, response){
     var jsonResponse = []
     for(i=0; i < data.response.docs.length -1; i++ ){
       var headlineSplit = blankOutWord(data.response.docs[i].headline.main)
-      // data.response.docs[i].headline.main
+      var date = data.response.docs[i].pub_date
+      date = date.split('')
+      date = date.splice(0, 10)
+      date = date.join('')
+      console.log(date)
+
       var object = {
         headline: [headlineSplit.headLinePart1, headlineSplit.headLinePart2],
         blankWord: headlineSplit.blankWord,
         blankWordCharLength: headlineSplit.blankWordLength,
         category: req.params.category,
-        year: req.params.year
+        year: req.params.year,
+        date: date
       }
 
       jsonResponse.push(object)
@@ -40,7 +46,7 @@ function getNews(req, response){
 
 
 function blankOutWord(headline){
-  var string = headline.replace (/[.,?!\s,]/g, " ");
+  var string = headline.replace (/[.,;,?!\s,]/g, " ");
   string = string.toUpperCase()
   string = string.split(' ')
 
@@ -70,26 +76,6 @@ function blankOutWord(headline){
     return response
   
 }
-
-
-
-// do {
-//    i += 1;
-//    console.log(i);
-// } while (i < 5);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 module.exports = {
   getNews: getNews

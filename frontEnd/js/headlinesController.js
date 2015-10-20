@@ -8,9 +8,7 @@ angular
 		var self = this;
     self.year = ''
     self.category =''
-
     self.jogOnApp = []
-
     self.answer = ''
 
     self.score = 0;
@@ -33,7 +31,8 @@ angular
 			self.jogOnApp[index].year = self.year
 			self.jogOnApp[index].category = self.category
 			console.log(self.jogOnApp[index])
-			localStorage.setItem('jogOnApp', JSON.stringify(self.jogOnApp))			
+			localStorage.setItem('jogOnApp', JSON.stringify(self.jogOnApp))		
+      this.score = 0	
 
 		}
     this.updateScore = function() {
@@ -63,6 +62,7 @@ angular
     }
 
     this.resetValues = function() {
+      location.reload()
 			this.year = '';
 			this.category = '';
 		}
