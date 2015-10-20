@@ -14,12 +14,9 @@ function getNews(req, response){
 
     var data = JSON.parse(body)
     var jsonResponse = []
-
     for(i=0; i < data.response.docs.length -1; i++ ){
-
       var headlineSplit = blankOutWord(data.response.docs[i].headline.main)
-// data.response.docs[i].headline.main
-
+      // data.response.docs[i].headline.main
       var object = {
         headline: [headlineSplit.headLinePart1, headlineSplit.headLinePart2],
         blankWord: headlineSplit.blankWord,
@@ -31,8 +28,6 @@ function getNews(req, response){
       jsonResponse.push(object)
     }
 
-
-    // response.json(data.response.docs[0])
     response.json(jsonResponse)
   });
 
@@ -45,26 +40,37 @@ function blankOutWord(headline){
 
   min = 0
   max = string.length
-  var indexToSplit = Math.floor(Math.random() * (max - min) + min);
+  var indexToSplit
 
-  console.log(string[indexToSplit])
-  var first = string.slice(0, indexToSplit).join(' ');
-  var second = string.slice(indexToSplit + 1).join(' ');
+  do {
+    indexToSplit = Math.floor(Math.random() * (max - min) + min);
 
-  // console.log(first)
-  // console.log(second)
+  } while (string[indexToSplit].length < 4)
 
-  var response = {
-    headLinePart1: first,
-    headLinePart2: second,
-    blankWord: string[indexToSplit],
-    blankWordLength: string[indexToSplit].length
-  }
 
-  return response
+    var first = string.slice(0, indexToSplit).join(' ');
+    var second = string.slice(indexToSplit + 1).join(' ');
 
+    // console.log(first)
+    // console.log(second)
+
+    var response = {
+      headLinePart1: first,
+      headLinePart2: second,
+      blankWord: string[indexToSplit],
+      blankWordLength: string[indexToSplit].length
+    }
+
+    return response
+  
 }
 
+
+
+// do {
+//    i += 1;
+//    console.log(i);
+// } while (i < 5);
 
 
 
