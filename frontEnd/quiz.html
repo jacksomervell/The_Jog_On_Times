@@ -1,6 +1,80 @@
 
-<li ng-repeat="headline in headlines.getHeadlines">
-      <strong>{{ headline.headline[0] }}</strong>
-      <input id ="headline-answer" type="text" autofocus>
-      <strong>{{ headline.headline[1] }}</strong>
-    </li>
+<li>
+  <div class = "question-text" ng-init= "Q1 = true" ng-show= "Q1" class= "ng-hide">
+        <h2>1</h2>
+        {{headlines.getHeadlines[0].headline[0]}}
+        <input id ="headline-answer" type="text" autofocus>
+        {{headlines.getHeadlines[0].headline[1]}}
+        <button class='submit' ng-click="Q2 = true; Q1 = false" >submit</button>
+  </div>
+
+  <div class = "question-text" ng-show= "Q2" class="ng-hide"> 
+        <h2>2</h2>
+        {{headlines.getHeadlines[1].headline[0]}}
+        <input id ="headline-answer" type="text" autofocus>
+        {{headlines.getHeadlines[1].headline[1]}}
+        <button class='submit' ng-click="Q3 = true; Q2 = false" >submit</button>
+  </div>
+
+   <div class = "question-text" ng-show= "Q3" class="ng-hide">
+        <h2>3</h2>
+        {{headlines.getHeadlines[2].headline[0]}}
+        <input id ="headline-answer" type="text" autofocus>
+        {{headlines.getHeadlines[2].headline[1]}}
+        <button class='submit' ng-click="Q4 = true; Q3 = false" >submit</button>
+  </div>
+
+   <div class = "question-text" ng-show= "Q4" class="ng-hide">
+        <h2>4</h2>
+        {{headlines.getHeadlines[3].headline[0]}}
+        <input id ="headline-answer" type="text" autofocus>
+        {{headlines.getHeadlines[3].headline[1]}}
+        <button class='submit' ng-click="Q5 = true; Q4 = false" >submit</button>
+  </div>
+
+  <div class = "question-text" ng-show= "Q5" class="ng-hide">
+        <h2>5</h2>
+        {{headlines.getHeadlines[3].headline[0]}}
+        <input id ="headline-answer" type="text" autofocus>
+        {{headlines.getHeadlines[3].headline[1]}}
+        <button class='submit' ng-click="Q6 = true; Q5 = false" >submit</button>
+  </div>
+
+  <div class = "question-text" ng-show= "Q6" class="ng-hide">
+        <h2>6</h2>
+        {{headlines.getHeadlines[3].headline[0]}}
+        <input id ="headline-answer" type="text" autofocus>
+        {{headlines.getHeadlines[3].headline[1]}}
+        <button class='submit' ng-click="Q7 = true; Q6 = false" >submit</button>
+  </div>
+
+  <div class = "question-text" ng-show= "Q7" class="ng-hide">
+        {{headlines.getHeadlines[3].headline[0]}}
+        <input id ="headline-answer" type="text" autofocus>
+        {{headlines.getHeadlines[3].headline[1]}}
+        <button class='submit' ng-click="Q8 = true; Q7 = false" >submit</button>
+  </div>
+
+  <div class = "question-text" ng-show= "Q8" class="ng-hide">
+        {{headlines.getHeadlines[3].headline[0]}}
+        <input id ="headline-answer" type="text" autofocus>
+        {{headlines.getHeadlines[3].headline[1]}}
+        <button class='submit' ng-click="Q9 = true; Q8 = false" >submit</button>
+  </div>
+
+  <div class = "question-text" ng-show= "Q9" class="ng-hide">
+        {{headlines.getHeadlines[3].headline[0]}}
+        <input id ="headline-answer" type="text" autofocus>
+        {{headlines.getHeadlines[3].headline[1]}}
+        <button class='submit' ng-click="Q10 = true; Q9 = false" >submit</button>
+  </div>
+
+  <div class = "question-text" ng-show= "Q10" class="ng-hide">
+        {{headlines.getHeadlines[3].headline[0]}}
+        <input id ="headline-answer" type="text" autofocus>
+        {{headlines.getHeadlines[3].headline[1]}}
+        <button class='submit' ng-click="Q10 = false" >submit</button>
+  </div>
+
+
+</li>
