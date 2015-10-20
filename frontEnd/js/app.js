@@ -6,9 +6,14 @@ angular
 		$urlRouterProvider.otherwise('/');
 
 	$stateProvider
-		.state('home', {
+		.state('login', {
 			url: '/',
-			templateUrl: 'home.html'
+			templateUrl: 'login.html'
+		})
+
+		.state('setup', {
+			url: '/setup',
+			templateUrl: 'setup.html'
 		})
 
 		.state('quiz', {

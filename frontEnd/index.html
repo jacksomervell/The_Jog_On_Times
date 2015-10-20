@@ -18,31 +18,38 @@
 
 	<main ng-controller="HeadlineController as headlines">
 	<nav id="navbar">
-		<div id="title">
-			<h1>Jog On Times</h1>
+		<div id="title-container">
+			<h1 id="title">Jog On Times</h1>
 		</div>
 		<div id="time-date">
 			
 		</div>
 	</nav>
-	<div id="left-sidebar">
-		<div id="instructions">
-			<h3 class="instructions-title">
-				<p class="instructions-text">
-					
-				</p>
-			</h3>
+	<div class="container">
+		<div class="row">
+			<div id="left-sidebar" class="col s3">
+				<div id="instructions">
+					<h3 class="instructions-title">
+						<p class="instructions-text">
+							
+						</p>
+					</h3>
+				</div>
+				<div id="year">
+					<h4 class="year-display">Year: </h4>
+				</div>
+				<div id="category">
+					<h4 class="category-display">Category: </h4>
+				</div>
+			</div>
+			<div id="quiz-box" class="col s6" ui-view></div>
+			<div id="scoreboard" class="col s3">
+				<h4 class="current-scores">Scoreboard</h4>
+				<ul>
+					<li>test scores</li>
+				</ul>
+			</div>
 		</div>
-		<div id="year">
-			<h4 class="year-display">Year: </h4>
-		</div>
-		<div id="category">
-			<h4 class="category-display">Category: </h4>
-		</div>
-	</div>
-	<div id="wrapper" ui-view></div>
-	<div id="scoreboard">
-		
 	</div>
 	</main>
 	
