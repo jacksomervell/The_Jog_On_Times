@@ -5,7 +5,7 @@
 
   
   <h3>Select your category </h3>
-    <select ng-model = "headlines.category">
+    <select ng-model = "headlines.category" ng-change='headlines.saveSetup()'>
         <option value="" disabled selected>Choose your option</option>
         <option value="Arts" selected>Arts</option>
         <option value="Books">Books</option>

@@ -19,4 +19,9 @@ angular
         console.log(response.data)
     	});
   	}
+
+
+  	this.saveSetup = function() {
+			console.log('clicked')
+		}
 	}

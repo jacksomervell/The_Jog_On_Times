@@ -24,5 +24,6 @@ angular
 			localStorage.setItem('jogOnApp', JSON.stringify(self.jogOnApp));
 
 		}
-	}
 
+
+	}
