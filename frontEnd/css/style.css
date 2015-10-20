@@ -43,10 +43,25 @@
 	text-align: center;
 }
 
+.year-display,.category-display,.select-year,.select-category {
+	font-family: cheltenham;
+	font-size: 32px;
+}
+
 .question-text {
 	font-family: cheltenham;
 	font-size: 28px;
 }
 
+.instructions-text,.login-container {
+	font-family: cheltenham;
+	font-size: 18px;
+}
 
+li {
+	list-style: none;
+}
 
+/*button {
+	padding-top: 2px;
+}*/
