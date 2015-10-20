@@ -1,5 +1,5 @@
 
-<form ng-submit = "headlines.getData()">
+<form>
   <h3>Select year (1851-2015)</h3>
   <input type="text" ng-model = "headlines.year" autofocus>
 
@@ -17,6 +17,7 @@
         <option value="International">International</option>
       </select>
   
-<button type="submit">Submit </button>
+<button ng-click='headlines.getData()' ui-sref="quiz" type="submit">Submit </button>
+
 
 </form>
