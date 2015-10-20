@@ -1,10 +1,10 @@
 angular
 	.module("jogOnTimesApp")
-	.controller("MainController", MainController);
+	.controller("HeadlineController", HeadlineController);
 
-	MainController.$inject = ["$http"];
+	HeadlineController.$inject = ["$http"];
 
-	function MainController($http) {
+	function HeadlineController($http) {
 		var self = this;
 		self.all = [];
 		// self.getHeadlines = getHeadlines;
