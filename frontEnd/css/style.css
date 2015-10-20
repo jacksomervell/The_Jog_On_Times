@@ -43,12 +43,7 @@
 	text-align: center;
 }
 
-.year-display,.category-display,.select-year,.select-category {
-	font-family: cheltenham;
-	font-size: 28px;
-}
-
-.question-text {
+.year-display,.category-display,.select-year,.select-category,.question-text {
 	font-family: cheltenham;
 	font-size: 28px;
 }
@@ -60,9 +55,7 @@
 	margin-top: 5px; 
 }
 
-
-
-.instructions-text,.login-container {
+.instructions-text,.login-container,.submit-button {
 	font-family: cheltenham;
 	font-size: 18px;
 }
@@ -83,10 +76,6 @@ li {
 	font-family: cheltenham;
 	font-size: 28px;
 }
-
-/*button {
-	padding-top: 2px;
-}*/
 
 .page-header  {
 	font-size: 20px;
