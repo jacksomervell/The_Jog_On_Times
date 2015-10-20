@@ -11,6 +11,7 @@ angular
     self.answer = ''
 
     var score = 0;
+    var currentQuestion = 0;
 
 		self.getHeadlines = []
     
@@ -25,18 +26,21 @@ angular
   	}
 
     this.updateScore = function() {
-      if (self.answer === self.getHeadlines[0].blankWord) {
+      if (self.answer === self.getHeadlines[currentQuestion].blankWord) {
         score = score + 1;
       console.log(self.getHeadlines[0].blankWord);
-      console.log('Correct so score is ' + score);
+      console.log('Correct so score is now ' + score);
       }
       else {
-      score = score + 1;
-      console.log(self.getHeadlines[0].blankWord);
-      console.log('Wrong so score is ' + score);
+      console.log(self.getHeadlines[currentQuestion].blankWord);
+      console.log('Wrong so score is still ' + score);
 
       }
+
+      currentQuestion = currentQuestion + 1;
     }
+
+
   }
 
 
@@ -46,3 +50,4 @@ angular
 
 // score rendered on score page and stored in localStorage
 
+// start of function, create var called question no = something in setup.html that tells you which question you're on
