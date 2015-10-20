@@ -37,9 +37,9 @@
 }
 
 #headline-answer {
-	width: 100px;
+	width: 250px;
 	font-family: cheltenham;
-	font-size: 28px;
+	font-size: 50px;
 	text-align: center;
 }
 
@@ -87,3 +87,13 @@ li {
 /*button {
 	padding-top: 2px;
 }*/
+
+.page-header  {
+	font-size: 20px;
+	float: right;
+}
+
+.the-headline {
+	font-size: 50px;
+	border-bottom: 1px solid gray;
+}
