@@ -40,7 +40,9 @@ function getNews(req, response){
 
 
 function blankOutWord(headline){
-  var string = headline.split(' ')
+  var string = headline.replace (/[.,?!\s,]/g, " ");
+  string = string.toUpperCase()
+  string = string.split(' ')
 
   min = 0
   max = string.length
