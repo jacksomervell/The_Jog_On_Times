@@ -18,10 +18,12 @@ function getNews(req, response){
     for(i=0; i < data.response.docs.length -1; i++ ){
 
       var headlineSplit = blankOutWord(data.response.docs[i].headline.main)
+// data.response.docs[i].headline.main
 
       var object = {
-        headline: data.response.docs[i].headline.main,
-        headlineSplit: headlineSplit,
+        headline: [headlineSplit.headLinePart1, headlineSplit.headLinePart2],
+        blankWord: headlineSplit.blankWord,
+        blankWordCharLength: headlineSplit.blankWordLength,
         category: req.params.category,
         year: req.params.year
       }
