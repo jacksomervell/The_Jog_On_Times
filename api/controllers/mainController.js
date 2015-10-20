@@ -6,6 +6,8 @@ function getNews(req, response){
   var end = req.params.year + '1231'
   var url = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + req.params.category + '&begin_date='+ start +'&end_date='+ end +'&api-key=9ede21e2158225e76cdbaf38fcaf8bda%3A14%3A73258088'
 
+  if(req.params.year && req.params.category) {
+
   request({
     url: url,
     method: 'GET',
@@ -30,7 +32,9 @@ function getNews(req, response){
 
     response.json(jsonResponse)
   });
-
+} else {
+  console.log('validation error')
+}
 
 }
 
