@@ -45,7 +45,7 @@
 
 .year-display,.category-display,.select-year,.select-category {
 	font-family: cheltenham;
-	font-size: 32px;
+	font-size: 28px;
 }
 
 .question-text {
@@ -77,6 +77,11 @@
 
 li {
 	list-style: none;
+}
+
+.current-scores {
+	font-family: cheltenham;
+	font-size: 28px;
 }
 
 /*button {
