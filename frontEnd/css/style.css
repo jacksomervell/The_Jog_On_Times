@@ -1,0 +1,56 @@
+@font-face {
+	font-family: ancient;
+	src: url('css/font/ancient.ttf');
+}
+
+@font-face {
+	font-family: cheltenham;
+	src: url('css/font/cheltenham.ttf');
+}
+
+.container {
+	width: 95%;
+}
+
+div {
+	border: 2px solid red;
+}
+
+#navbar {
+	width: 100%;
+	height: 20%;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#title-container {
+	text-align: center;
+}
+
+#title {
+	display: inline-block;
+	font-family: ancient;
+	color: black;
+}
+
+#quiz-box {
+	height: 60%;
+}
+
+#scoreboard {
+	height: 60%;
+}
+
+#headline-answer {
+	width: 100px;
+	font-family: cheltenham;
+	font-size: 28px;
+	text-align: center;
+}
+
+.question-text {
+	font-family: cheltenham;
+	font-size: 28px;
+}
+
+
+

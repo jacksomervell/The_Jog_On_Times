@@ -1,0 +1,22 @@
+
+<form ng-submit = "headlines.getData()">
+  <h3>Select year (1851-2015)</h3>
+  <input type="text" ng-model = "headlines.year" autofocus>
+
+  
+  <h3>Select your category </h3>
+    <select ng-model = "headlines.category">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="Arts" selected>Arts</option>
+        <option value="Books">Books</option>
+        <option value="Business">Business</option>
+        <option value="Movies">Movies</option>
+        <option value="Sports">Sports</option>
+        <option value="National">National</option>
+        <option value="Politics">Politics</option>
+        <option value="International">International</option>
+      </select>
+  
+<button type="submit">Submit </button>
+
+</form>
