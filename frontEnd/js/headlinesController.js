@@ -49,7 +49,12 @@ angular
       }
 
       currentQuestion = currentQuestion + 1;
-      self.answer = '';
+    
     }
+
+    this.clearAnswer = function(){
+      self.answer = ''
+   }
+
 	}
 

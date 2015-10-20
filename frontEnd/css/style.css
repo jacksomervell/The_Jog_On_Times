@@ -48,5 +48,12 @@
 	font-size: 28px;
 }
 
+.show-answer-right {
+	color: green;
+}
+
+.show-answer-wrong {
+	color: red;
+}
 
 
