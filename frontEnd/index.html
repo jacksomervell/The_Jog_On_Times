@@ -32,15 +32,21 @@
   			<div id="currentScore">
 					<h4 class="category-display">Score: {{ headlines.score }}</h4>
 				</div>
-			</div>
+				<div class="article-left">
+					<h5 class="article-left-title">
+						Extension Cord On Stage Steals Spotlight From Jeb Bush During Campaign Rally
+					</h5>
+					<img class="article-left-img" src="http://i.onionstatic.com/onion/5136/2/16x9/1600.jpg">
+					<p class="article-left-text">CONCORD, NH—Emphasizing the allure and appeal of the 30-foot length of electrical power cable that shared the stage with the former Florida governor, sources confirmed that an orange three-pronged extension cord completely stole the spotlight from Jeb Bush during a New Hampshire campaign rally Friday. “Jeb made some interesting points about the need to prioritize national security, but ultimately he was just completely overshadowed by the far more riveting extension cord running along the floor beside him,” said political pundit Chris Wallace, who acknowledged that attendees appeared more energized by the flexible orange cable taped to the stage and noted that the one-time GOP frontrunner repeatedly failed to connect with the audience as effectively as the cord. “Unfortunately for Jeb, no matter what he did throughout the night, he just looked bland and flat compared to that extension cord. He’s not going to want to bring that piece of electrical equipment with him to any more rallies if he wants voters’ attention to stay directed at him.” At press time, the Bush campaign team was rapidly assembling a focus group to learn how the candidate could be more like the extension cord.</p>
+				</div>
+				</div>
 			<div id="quiz-box" class="col s6" ui-view></div>
 			<div id="scoreboard" class="col s3">
 				<h4 class="current-scores" ng-init ="headlines.getScores()">Scoreboard</h4>
-
       <table>
         <tr>
           <th>Player</th>
-          <th>Catagory</th>
+          <th>Category</th>
           <th>Score</th>
         </tr>
         <tr class='top-scores' ng-repeat="score in headlines.allScores | filter: { score: '!undefined' } | orderBy: '-score' | limitTo: 10" >
@@ -50,13 +56,16 @@
         </tr>
 
       </table>
-
+				<div class="article-right">
+					<h5 class="article-right-title">
+						Bobby Jindal Lies To Parents About Winning GOP Nomination
+					</h5>
+					<img src="http://i.onionstatic.com/onion/5161/9/16x9/1600.jpg" class="article-right-img">
+					<p class="article-right-text">BATON ROUGE, LA—Saying he wasn’t quite president yet but that he was very, very close, Republican candidate Bobby Jindal reportedly lied to his parents Thursday about winning the 2016 GOP nomination. “Now, I don’t officially become president until I win the general election, but I’m just one step away,” said the Louisiana governor on a phone call with his mother and father, cautioning them that while he wasn’t able to live in the White House just yet, he almost certainly would be soon, and they could visit him anytime they wanted. “Yeah, thanks, it’s very exciting. It’s still sinking in...of course you guys can be there when I take the oath of office!” At press time, Jindal’s parents were reportedly telling him how proud they were and that they weren’t the least bit surprised.</p>
+				</div>
 			</div>
 		</div>
-	</div>
+		</div>
 	</main>
-	
-	
-
 </body>
 </html>
