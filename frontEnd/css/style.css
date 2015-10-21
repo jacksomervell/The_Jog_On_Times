@@ -32,6 +32,7 @@ body {
 	display: inline-block;
 	font-family: ancient;
 	color: black;
+	margin-bottom: 0px;
 }
 
 #quiz-box {
@@ -181,4 +182,23 @@ ol {
    color: #A9A9A9;
    font-size: 18px;
    margin-bottom: 5px;  
+}
+
+.time-date {
+	color: black;
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -20px;
+}
+
+.header-time {
+	display: block;
+	text-align: center
+
+}
+
+.title-spans{
+ padding-right: 8px;
+ padding-left: 8px;
 }
