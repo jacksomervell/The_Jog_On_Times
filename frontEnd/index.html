@@ -36,9 +36,21 @@
 			<div id="quiz-box" class="col s6" ui-view></div>
 			<div id="scoreboard" class="col s3">
 				<h4 class="current-scores" ng-init ="headlines.getScores()">Scoreboard</h4>
-				<ol>
-					<li class="top-scores" ng-repeat="score in headlines.allScores | filter: { score: '!undefined' } | orderBy: '-score' | limitTo: 10 ">{{ score.name }}: {{ score.score }}</li>
-				</ol>
+
+      <table>
+        <tr>
+          <th>Player</th>
+          <th>Catagory</th>
+          <th>Score</th>
+        </tr>
+        <tr class='top-scores' ng-repeat="score in headlines.allScores | filter: { score: '!undefined' } | orderBy: '-score' | limitTo: 10" >
+          <td>{{score.name}}</td>
+          <td>{{score.category}} - <span class='tableItem'>{{score.year}}</span></td>
+          <td>{{score.score}}</td>
+        </tr>
+
+      </table>
+
 			</div>
 		</div>
 	</div>

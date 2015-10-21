@@ -15,6 +15,7 @@ body {
 .container {
 	width: 95%;
 	background-color: #EDEFF0;
+	border-radius: 3px;
 }
 
 #navbar {
@@ -35,11 +36,17 @@ body {
 }
 
 #quiz-box {
-	height: 60%;
+	min-height: 60%;
 }
 
 #scoreboard {
 	height: 60%;
+}
+
+.top-scores td {
+	padding: 2px;
+	font-family: arial;
+	font-size: 15px; 
 }
 
 #headline-answer {
