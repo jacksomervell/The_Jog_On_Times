@@ -54,6 +54,10 @@ body {
 	font-size: 28px;
 }
 
+#left-sidebar {
+	padding: 10px;
+}
+
 #quiz-box {
 	border-right: 1px solid gray;
 	border-left: 1px solid gray;
@@ -68,7 +72,6 @@ body {
 
 .instructions-text,.login-container {
 	font-family: arial;
->>>>>>> css-Josh
 	font-size: 18px;
 }
 
@@ -181,4 +184,25 @@ ol {
    color: #A9A9A9;
    font-size: 18px;
    margin-bottom: 5px;  
+}
+
+.article-right,.article-left {
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.article-right-title,.article-left-title {
+	font-family: cheltenham;
+	font-size: 22px;
+	color: black;
+}
+
+.article-right-img,.article-left-img {
+	width: 100%;
+	height: 100%;
+}
+
+.article-right-text,.article-left-text {
+	font-family: arial;
+	font-size: 15px;
 }
