@@ -14,6 +14,7 @@ angular
     self.score = 0;
     var currentQuestion = 0;
 		self.getHeadlines = []
+    self.howToPlay
 
 		this.getData = function() {
 

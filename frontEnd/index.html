@@ -22,7 +22,7 @@
 	<div class="container">
 	<div ng-include="'navbar.html'"></div>
 		<div class="row">
-			<div id="left-sidebar" class="col s3">
+			<div id="left-sidebar" class="col s3" ng-init='howToPlay=false'>
 				<div id="year">
 					<h4 class="year-display">Year: {{ headlines.year }}</h4>
 				</div>
@@ -32,6 +32,7 @@
   			<div id="currentScore">
 					<h4 class="category-display">Score: {{ headlines.score }}</h4>
 				</div>
+
 			</div>
 			<div id="quiz-box" class="col s6" ui-view></div>
 			<div id="scoreboard" class="col s3">
@@ -40,10 +41,10 @@
       <table>
         <tr>
           <th>Player</th>
-          <th>Catagory</th>
+          <th>Category</th>
           <th>Score</th>
         </tr>
-        <tr class='top-scores' ng-repeat="score in headlines.allScores | filter: { score: '!undefined' } | orderBy: '-score' | limitTo: 10" >
+        <tr class='top-scores' ng-repeat="score in headlines.allScores | filter: { score: 'undefined' } | orderBy: '-score' | limitTo: 10" >
           <td>{{score.name}}</td>
           <td>{{score.category}} - <span class='tableItem'>{{score.year}}</span></td>
           <td>{{score.score}}</td>

@@ -16,6 +16,7 @@ function getNews(req, response){
 
     var data = JSON.parse(body)
     var jsonResponse = []
+
     for(i=0; i < data.response.docs.length -1; i++ ){
       var headlineSplit = blankOutWord(data.response.docs[i].headline.main)
       var date = data.response.docs[i].pub_date
@@ -38,14 +39,15 @@ function getNews(req, response){
 
     response.json(jsonResponse)
   });
-} else {
-  console.log('validation error')
-}
+
+  } else {
+    console.log('validation error')
+  }
 
 }
-
 
 function blankOutWord(headline){
+  
   var string = headline.replace (/[.,;,?!\s,]/g, " ");
   string = string.toUpperCase()
   string = string.split(' ')
@@ -62,9 +64,6 @@ function blankOutWord(headline){
 
     var first = string.slice(0, indexToSplit).join(' ');
     var second = string.slice(indexToSplit + 1).join(' ');
-
-    // console.log(first)
-    // console.log(second)
 
     var response = {
       headLinePart1: first,
